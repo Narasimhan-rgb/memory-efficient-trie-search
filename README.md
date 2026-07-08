@@ -177,8 +177,12 @@ Never upload API keys, passwords, tokens, recovery codes, or private datasets.
 
 The accompanying research work studies memory-efficient Trie variants for large-scale text search and compares classic search methods with Trie-based approaches. The current code repository is a reproducible implementation and benchmark prototype for that work.
 
-## Author
+## Authors & Contributors
 
-**Narasimhan D**  
+**Narasimhan D**  - *Primary Author*
 Computer Science Student, VIT Chennai  
 Research interests: algorithms, information retrieval, intelligent systems, and healthcare AI.
+
+**Vijay Nishal Magesh Kumar** - *Contributor*
+Computer Science Student, VIT Chennai  
+Research interests: artificial intelligence, cloud computing, and healthcare AI.
