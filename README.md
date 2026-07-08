@@ -179,10 +179,10 @@ The accompanying research work studies memory-efficient Trie variants for large-
 
 ## Authors & Contributors
 
-**Narasimhan D**  - *Primary Author*
-Computer Science Student, VIT Chennai  
-Research interests: algorithms, information retrieval, intelligent systems, and healthcare AI.
+* **Narasimhan D** - *Primary Author*
+  * Computer Science Student, VIT Chennai
+  * Research interests: algorithms, information retrieval, intelligent systems, and healthcare AI.
 
-**Vijay Nishal Magesh Kumar** - *Contributor*
-Computer Science Student, VIT Chennai  
-Research interests: artificial intelligence, cloud computing, and healthcare AI.
+* **Vijay Nishal Magesh Kumar** - *Contributor*
+  * Computer Science Student, VIT Chennai
+  * Research interests: artificial intelligence, cloud computing, and healthcare AI.
