@@ -12,8 +12,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- Config ---
-RAW_CSV = Path(os.getenv("RAW_CSV", r"data\raw\data.csv"))
-INDEX_DIR = Path(os.getenv("INDEX_DIR", r"data\index"))
+RAW_CSV = Path(os.getenv("RAW_CSV", "data/raw/data.csv"))
+INDEX_DIR = Path(os.getenv("INDEX_DIR", "data/index"))
 
 MAX_PREFIX = int(os.getenv("MAX_PREFIX", "3"))     # Trie depth
 TOPK_STORE = int(os.getenv("TOPK_STORE", "20"))    # Items per node
