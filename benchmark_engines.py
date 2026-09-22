@@ -13,7 +13,7 @@ from rapidfuzz import process, fuzz
 
 load_dotenv()
 
-RAW_CSV    = Path(os.getenv("RAW_CSV", r"data\raw\data.csv"))
+RAW_CSV    = Path(os.getenv("RAW_CSV", "data/raw/data.csv"))
 DATA_LIMIT = 10000
 TOP_K      = 10
 
@@ -266,7 +266,7 @@ def plot(engines, queries, latencies, suggestions, build_times, build_mem_mb):
                 fontsize=7.5, va="top", color="#555555", style="italic")
 
     # ─────────────────────────────────────────────────────────
-    # ROW 1, COL 0  →  Build Memory (MB)  — CORRECT: Trie lowest
+    # ROW 1, COL 0  →  Traced Python Allocations (MiB)  — CORRECT: Trie lowest
     # ─────────────────────────────────────────────────────────
     ax_bmem = fig.add_subplot(gs[1, 0])
 
@@ -281,8 +281,8 @@ def plot(engines, queries, latencies, suggestions, build_times, build_mem_mb):
     ax_bmem.set_yticklabels(enames, fontsize=9)
     ax_bmem.set_xlim(0, max(build_mem_mb) * 1.35)
     ax_clean(ax_bmem,
-             "Index Build Memory",
-             "Peak RAM (MB)", "")
+             "Index Build Python Allocations",
+             "Peak traced Python allocations (MiB)", "")
     ax_bmem.text(0.98, 0.05,
                  "Trie only stores paths\nand top-K lists → light.\n"
                  "3-Gram maps every\ntrigram → heavier.",
@@ -336,7 +336,7 @@ def plot(engines, queries, latencies, suggestions, build_times, build_mem_mb):
     ax_sc.set_xlabel("Space (MB)", fontsize=8)
     ax_clean(ax_sc,
              "Space vs Time Trade-off",
-             "Space — Build Memory (MB)",
+             "Space — Traced Python Allocations (MiB)",
              "Time (µs / query) — log")
     # Bottom-left = ideal zone marker
     ax_sc.text(0.04, 0.08, "← bottom-left = ideal",

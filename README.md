@@ -154,8 +154,8 @@ The `RadixTrie` class name reflects the project direction, but the current imple
 
 Future work includes:
 
-- true path compression for Radix/PATRICIA nodes
-- Double-Array Trie implementation
+- integrating the new static compressed Radix index into the popularity-ranked builder
+- scaling and memory benchmarking of the new static Double-Array Trie
 - scalable incremental updates
 - FastAPI search endpoints
 - controlled benchmarks on larger datasets and repeatable hardware settings
@@ -186,3 +186,7 @@ The accompanying research work studies memory-efficient Trie variants for large-
 * **Vijay Nishal Magesh Kumar** - *Contributor*
   * Computer Science Student, VIT Chennai
   * Research interests: artificial intelligence, cloud computing, and healthcare AI.
+
+## Verified scope and remaining work
+
+See [REPOSITORY_STATUS.md](REPOSITORY_STATUS.md) for reproduction commands and acceptance boundaries.

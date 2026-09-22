@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-INDEX_DIR = Path(os.getenv("INDEX_DIR", r"data\index"))
+INDEX_DIR = Path(os.getenv("INDEX_DIR", "data/index"))
 
 # --- Globals for Loaded Data ---
 READY = False
